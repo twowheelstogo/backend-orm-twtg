@@ -4,7 +4,8 @@
   "description": "it is the package to control the orm ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-dev-dep": "npm uninstall djorellanabmrb/configs-twtg#master && npm install --save djorellanabmrb/configs-twtg#master -or-commit-or-tag"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/djorellanabmrb/twtg-orm#readme",
   "dependencies": {
+    "configs-twtg": "github:djorellanabmrb/configs-twtg#master",
     "json-validator": "0.0.34",
     "pg": "^8.3.3",
     "sequelize": "^6.3.5"

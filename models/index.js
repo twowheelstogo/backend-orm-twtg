@@ -6,7 +6,7 @@ const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 
 const db = {};
-const config = require("./configs");
+const {SequelizeConfig:config} = require("configs-twtg");
 let sequelize = new Sequelize(config.database, config.username, config.password,
    {dialect: config.dialect, host: config.host});
 
