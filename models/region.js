@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.NUMBER,
       primaryKey: true
     },
+    zipCode: DataTypes.STRING,
     locationRef: DataTypes.GEOMETRY,
     zoomMap: DataTypes.SMALLINT
   }, {
