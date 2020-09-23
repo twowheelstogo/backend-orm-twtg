@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       City.belongsTo(models.Region);
       City.hasMany(models.Town);
+      City.hasMany(models.Region);
     }
   };
   City.init({
@@ -15,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true
     },
     name: DataTypes.STRING,
+    telephonePrefix: DataTypes.STRING,
     CountryId: {
       type: DataTypes.NUMBER,
       primaryKey: true
@@ -24,7 +26,6 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true
     },
     gmt: DataTypes.NUMBER,
-    
     locationRef: DataTypes.GEOMETRY,
     zoomMap: DataTypes.SMALLINT,
     zipCode: DataTypes.INTEGER

@@ -7,5 +7,4 @@ class TwtgOrm {
     }
 }
 
-
 module.exports = TwtgOrm;

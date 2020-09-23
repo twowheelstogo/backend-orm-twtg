@@ -26,6 +26,12 @@ module.exports = {
         type: Sequelize.GEOMETRY('POINT'),
         comment: 'it is point reference of the region'
       },
+      telephonePrefix: {
+        allowNull: false,
+        type: Sequelize.STRING(5),
+        defaultValue: 8,
+        comment: 'it is telephone prefix that identificate the country'
+      },
       zoomMap: {
         allowNull: false,
         type: Sequelize.SMALLINT,
