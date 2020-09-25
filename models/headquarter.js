@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Headquarter',
-    schema: "globals",
+    schema: "managers",
   });
   return Headquarter;
 };
