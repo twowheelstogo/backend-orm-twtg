@@ -13,7 +13,8 @@ module.exports = (sequelize, DataTypes) => {
     regex: DataTypes.STRING,
     name: DataTypes.STRING,
     mask: DataTypes.STRING,
-    example: DataTypes.STRING
+    hint: DataTypes.STRING,
+    key: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'DocumentMetadata',
