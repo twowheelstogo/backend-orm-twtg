@@ -5,8 +5,6 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class RequiredDocument extends Model {
     static associate(models) {
-      RequiredDocument.belongsTo(models.Headquarter);
-      RequiredDocument.belongsTo(models.Document);
     }
   };
   RequiredDocument.init({
