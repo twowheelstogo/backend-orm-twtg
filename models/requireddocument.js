@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'RequiredDocument',
-    schema: "globals"
+    schema: "managers"
   });
   return RequiredDocument;
 };
