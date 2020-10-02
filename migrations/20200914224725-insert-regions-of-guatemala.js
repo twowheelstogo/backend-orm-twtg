@@ -30,4 +30,4 @@ module.exports = {
   down: async (queryInterface, Sequelize) => {
     await queryInterface.bulkDelete({ tableName: 'Regions', schema: 'globals' }, {CountryId:1}, {});
   }
-};
+}; 
