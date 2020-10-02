@@ -4,9 +4,9 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class CompanyAlert extends Model {
- 
+
     static associate(models) {
-      
+
     }
   };
   CompanyAlert.init({

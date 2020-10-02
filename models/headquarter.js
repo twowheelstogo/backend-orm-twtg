@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class Headquarter extends Model {
     static associate(models) {
       Headquarter.belongsTo(models.City);
-      Headquarter.belongsToMany(models.Document, { through: models.RequiredDocument});
+      Headquarter.belongsToMany(models.Document, { through: models.RequiredDocument });
     }
   };
   Headquarter.init({

@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class Document extends Model {
     static associate(models) {
       Document.belongsTo(models.Country);
-      Document.belongsToMany(models.Headquarter, { through: models.RequiredDocument});
+      Document.belongsToMany(models.Headquarter, { through: models.RequiredDocument });
       Document.hasMany(models.DocumentMetadata);
     }
   };

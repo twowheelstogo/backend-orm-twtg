@@ -9,9 +9,9 @@ module.exports = (sequelize, DataTypes) => {
       Country.hasMany(models.Document);
     }
   };
-  
+
   Country.init({
-    id:{
+    id: {
       type: DataTypes.NUMBER,
       primaryKey: true
     },
