@@ -7,7 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       City.belongsTo(models.Region);
       City.hasMany(models.Town);
-      City.hasMany(models.Region);
+      City.hasMany(models.Headquarter);
+      City.hasMany(models.TransitedPlace);
     }
   };
   City.init({
