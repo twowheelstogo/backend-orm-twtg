@@ -15,6 +15,7 @@ module.exports = {
       "TownId" INT null,
       "Point" geometry(Point),
       "Perimeter" geometry(Polygon),
+      "enable" boolean,
       "createdAt" timestamptz(6),
       "updatedAt" timestamptz(6),
       PRIMARY KEY("id"),
@@ -33,6 +34,7 @@ module.exports = {
    comment on column "business"."TransitedPlaces"."Perimeter" is 'Is a polygon that limit the area of the transited place';
    comment on column "business"."TransitedPlaces"."createdAt" is 'Date of creation of the register';
    comment on column "business"."TransitedPlaces"."updatedAt" is 'Date of the last modification of the register';
+   comment on column "business"."TransitedPlaces"."enable" is 'column that check it is enabled';
    comment on table "business"."TransitedPlaces" is 'It is a model to get a rate';`);
 
   },
