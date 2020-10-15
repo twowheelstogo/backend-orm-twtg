@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     enable: DataTypes.BOOLEAN
   }, {
     sequelize,
+    schema: "business",
     modelName: 'TransitedPlace',
   });
   return TransitedPlace;
