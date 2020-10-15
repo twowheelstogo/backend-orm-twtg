@@ -15,8 +15,8 @@ module.exports = (sequelize, DataTypes) => {
     CountryId: DataTypes.NUMBER,
     CityId: DataTypes.NUMBER,
     TownId: DataTypes.NUMBER,
-    Perimeter: DataTypes.GEOMETRY("POLYGON"),
-    Point: DataTypes.GEOMETRY("POINT"),
+    perimeter: DataTypes.GEOMETRY("POLYGON"),
+    point: DataTypes.GEOMETRY("POINT"),
     enable: DataTypes.BOOLEAN
   }, {
     sequelize,

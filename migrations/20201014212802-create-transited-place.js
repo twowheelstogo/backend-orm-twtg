@@ -13,8 +13,8 @@ module.exports = {
       "CountryId" INT,
       "CityId" INT,
       "TownId" INT null,
-      "Point" geometry(Point),
-      "Perimeter" geometry(Polygon),
+      "point" geometry(Point),
+      "perimeter" geometry(Polygon),
       "enable" boolean,
       "createdAt" timestamptz(6),
       "updatedAt" timestamptz(6),
@@ -30,8 +30,8 @@ module.exports = {
    comment on column "business"."TransitedPlaces"."RegionId" is 'Reference to region';
    comment on column "business"."TransitedPlaces"."CityId" is 'Reference to city';
    comment on column "business"."TransitedPlaces"."TownId" is 'it is a pointer to town';
-   comment on column "business"."TransitedPlaces"."Point" is 'It is a geo point to refer the transited place';
-   comment on column "business"."TransitedPlaces"."Perimeter" is 'Is a polygon that limit the area of the transited place';
+   comment on column "business"."TransitedPlaces"."point" is 'It is a geo point to refer the transited place';
+   comment on column "business"."TransitedPlaces"."perimeter" is 'Is a polygon that limit the area of the transited place';
    comment on column "business"."TransitedPlaces"."createdAt" is 'Date of creation of the register';
    comment on column "business"."TransitedPlaces"."updatedAt" is 'Date of the last modification of the register';
    comment on column "business"."TransitedPlaces"."enable" is 'column that check it is enabled';
