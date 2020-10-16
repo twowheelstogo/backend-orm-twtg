@@ -15,7 +15,7 @@ module.exports = {
       "TownId" INT null,
       "point" geometry(Point),
       "perimeter" geometry(Polygon),
-      "enable" boolean,
+      "enable" boolean default TRUE,
       "createdAt" timestamptz(6),
       "updatedAt" timestamptz(6),
       PRIMARY KEY("id"),
