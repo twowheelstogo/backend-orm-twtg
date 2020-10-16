@@ -6,7 +6,7 @@ module.exports = {
     {comment: "create business model"});
 
     await queryInterface.sequelize.query(`CREATE TABLE business."TransitedPlaces"(
-      "id" INT,
+      "id" SERIAL,
       "name" varchar(255),
       "description" varchar(255) null,
       "RegionId" INT,
