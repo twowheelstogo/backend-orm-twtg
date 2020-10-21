@@ -1,9 +1,10 @@
 class TwtgOrm {
-    constructor(){
+    constructor(config){
+        this.config = config;
     }
         
     getDb(){
-        return require("./models");
+        return require("./models")(this.config);
     }
 }
 
