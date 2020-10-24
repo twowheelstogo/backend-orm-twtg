@@ -8,4 +8,7 @@ class TwtgOrm {
     }
 }
 
+
 module.exports = TwtgOrm;
+
+console.log('todo ok')

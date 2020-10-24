@@ -1,0 +1,5 @@
+
+[4mSequelize CLI [Node: 12.18.3, CLI: 6.2.0, ORM: 6.3.5][24m
+
+Parsed url postgres://postgres:*****@localhost:5432/postgres
+No migrations were executed, database schema was already up to date.
