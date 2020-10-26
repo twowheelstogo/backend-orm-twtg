@@ -4,7 +4,8 @@
   "description": "it is the package to control the orm ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-utils": "npm uninstall twowheelstogo/backend-utils-twtg#master && npm install --save twowheelstogo/backend-utils-twtg#master -or-commit-or-tag"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,12 @@
   "homepage": "https://github.com/twowheelstogo/backend-orm-twtg#readme",
   "dependencies": {
     "configs-twtg": "github:twowheelstogo/backend-configs-twtg#master",
+    "crypto-random-string": "^3.3.0",
     "json-validator": "0.0.34",
     "pg": "^8.3.3",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "utils-twtg": "github:twowheelstogo/backend-utils-twtg#master",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
