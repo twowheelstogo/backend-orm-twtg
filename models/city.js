@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       City.hasMany(models.Town);
       City.hasMany(models.Headquarter);
       City.hasMany(models.TransitedPlace);
+      City.hasMany(models.BranchOffice);
     }
   };
   City.init({
