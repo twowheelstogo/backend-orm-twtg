@@ -10,6 +10,8 @@ module.exports = (sequelize, DataTypes) => {
   class BranchOffice extends Model {
     static associate(models) {
       BranchOffice.belongsTo(models.Company);
+      BranchOffice.belongsTo(models.City);
+      BranchOffice.belongsTo(models.Town);
     }
   };
   BranchOffice.init({
