@@ -12,7 +12,7 @@ module.exports = {
       "CityId" INT,
       "TownId" INT null,
       "point" geometry(Point),
-      "perimeter" geometry(Polygon),
+      "perimeter" geometry(Polygon) null,
       "enable" boolean default TRUE,
       "createdAt" timestamptz(6),
       "updatedAt" timestamptz(6),
