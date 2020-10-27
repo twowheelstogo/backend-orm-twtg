@@ -35,7 +35,7 @@ module.exports = {
         comment:'Key was encripted to access the API'
       },
       uidFirebase: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.STRING,
         comment:'Uid token authentication on firebase'
       },

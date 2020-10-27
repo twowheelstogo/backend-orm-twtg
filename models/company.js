@@ -17,37 +17,14 @@ module.exports = (sequelize, DataTypes) => {
   Company.init({
     id: {
       type: DataTypes.UUID,
-      primaryKey: true,
-      allowNull: false
+      primaryKey: true
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    enable: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: true
-    },
-    publicKey: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      defaultValue: true
-    },
-    privateKey: {
-      allowNull: false,
-      type: DataTypes.TEXT,
-    },
-    uidFirebase: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: true
-    },
-
+    name: DataTypes.STRING,
+    description: DataTypes.STRING,
+    enable: DataTypes.BOOLEAN,
+    publicKey: DataTypes.TEXT,
+    privateKey: DataTypes.TEXT,
+    uidFirebase: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Company',
@@ -57,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
         company.id = uuidv4();
         company.publicKey = uuidv4();
         let _privateKey  = cryptoRandomString({length: 32, type: 'base64'});
-        company.privateKey = cryptoUtil.encrypt(_privateKey);
+        company.privateKey = _privateKey;
       }
     }
   });
