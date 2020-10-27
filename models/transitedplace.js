@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class TransitedPlace extends Model {
     static associate(models) {
       TransitedPlace.belongsTo(models.City);
+      TransitedPlace.belongsTo(models.Town);
     }
   };
   TransitedPlace.init({
