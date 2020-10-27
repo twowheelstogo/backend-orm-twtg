@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     privateKey: {
       allowNull: false,
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
     },
     uidFirebase: {
       type: DataTypes.VARCHAR,
