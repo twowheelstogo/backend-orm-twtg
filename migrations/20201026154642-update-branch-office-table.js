@@ -5,7 +5,7 @@ module.exports = {
       "id" UUID,
       "CompanyId" UUID,
       "name" varchar(255),
-      "description" varchar(255),
+      "description" varchar(255) null,
       "address" varchar(255),
       "CountryId" INT,
       "RegionId" INT,
