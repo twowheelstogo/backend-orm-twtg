@@ -36,7 +36,7 @@ module.exports = {
       },
       uidFirebase: {
         allowNull: false,
-        type: Sequelize.VARCHAR,
+        type: Sequelize.STRING,
         comment:'Uid token authentication on firebase'
       },
       createdAt: {
