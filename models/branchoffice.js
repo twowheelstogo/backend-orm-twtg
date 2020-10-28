@@ -43,7 +43,7 @@ module.exports = (sequelize, DataTypes) => {
         branch.id = uuidv4();
         branch.publicKey = uuidv4();
         let _privateKey  = cryptoRandomString({length: 32, type: 'base64'});
-        branch.privateKey = cryptoUtil.encrypt(_privateKey);
+        branch.privateKey = _privateKey;
       }
     }
   });
