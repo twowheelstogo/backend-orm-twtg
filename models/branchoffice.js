@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     enable:  DataTypes.BOOLEAN,
     publicKey: DataTypes.UUID,
     privateKey: DataTypes.STRING,
-    phone: DataTypes.STRING,
+    phone: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'BranchOffice',

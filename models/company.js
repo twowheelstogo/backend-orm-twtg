@@ -25,6 +25,8 @@ module.exports = (sequelize, DataTypes) => {
     publicKey: DataTypes.TEXT,
     privateKey: DataTypes.TEXT,
     uidFirebase: DataTypes.STRING,
+    sucMapUrl: DataTypes.TEXT,
+    logoUrl: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'Company',
