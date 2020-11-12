@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Circle',
+    schema: "managers"
   });
   return Circle;
 };
