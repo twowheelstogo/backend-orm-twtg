@@ -14,7 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Alert.init({
-    name: DataTypes.ENUM,
+    name: {
+      type:   DataTypes.ENUM,
+      values: ['En Tiempo', 'Verificar', 'Por llegar Tarde', 'Tarde']
+    },
     time: DataTypes.DECIMAL,
     CompanyId: DataTypes.UUID
   }, {
