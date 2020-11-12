@@ -37,9 +37,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       }
-    });
+    },{schema: 'managers',
+    comment: "it is manager alerts"});
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Alerts');
+    await queryInterface.dropTable({ tableName: 'Alerts', schema: 'managers' });
   }
 };
