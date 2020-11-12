@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Alert',
+    schema: "managers"
   });
   return Alert;
 };
