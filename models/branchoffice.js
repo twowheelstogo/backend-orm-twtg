@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
       beforeCreate: (branch) => {
         branch.id = uuidv4();
         branch.publicKey = uuidv4();
-        let _privateKey  = cryptoRandomString({length: 32, type: 'base64'});
+        let _privateKey  = cryptoRandomString({length: 32, type: 'alphanumeric'});
         branch.privateKey = _privateKey;
       }
     }

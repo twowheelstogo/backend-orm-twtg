@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
       beforeCreate: (company) => {
         company.id = uuidv4();
         company.publicKey = uuidv4();
-        let _privateKey  = cryptoRandomString({length: 32, type: 'base64'});
+        let _privateKey  = cryptoRandomString({length: 32, type: 'alphanumeric'});
         company.privateKey = _privateKey;
       }
     }
